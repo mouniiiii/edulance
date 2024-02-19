@@ -1,0 +1,237 @@
+{# templates/your_template.html.twig #}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jobz-post-job</title>
+
+<script src="{{asset('job/js/4n2NXumNjtg5LPp6VXLlDicTUfA.js')}}"></script>
+<link rel="apple-touch-icon" href="{{asset('job/images/apple-touch-icon.html')}}">
+<link rel="shortcut icon" type="image/ico" href="{{asset('job/images/favicon.html')}}" />
+
+<link rel="stylesheet" href="{{asset('job/css/bootstrap.min.css')}}">
+
+<link href="{{asset('job/font-awesome-4.7.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+
+<link href="{{asset('job/css/matrialize.css')}}" rel="stylesheet">
+
+<link href="{{asset('job/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="{{asset('job/css/jquery-ui.min.css')}}">
+
+<link rel="stylesheet" href="{{asset('job/css/style.css')}}">
+</head>
+<body class="background-color-white">
+<header class="header">
+
+<div class="header_container background-color-orange-light">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="header_content d-flex flex-row align-items-center justify-content-start">
+<div class="logo_container">
+<a href="index.html">
+<img src="{{asset('job/imags/logo.png')}}" class="logo-text" alt="">
+</a>
+</div>
+<nav class="main_nav_contaner ml-auto">
+<ul class="main_nav">
+<li class="dropdown ">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="index.html">Home variation 1</a></li>
+ <li><a href="index2.html">Home variation 2</a></li>
+</ul>
+</li>
+<li class="dropdown ">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Job
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="">Job List</a></li>
+<li><a href="">Job Detail</a></li>
+</ul>
+</li>
+<li><a href="blog_page.html"> Blog</a></li>
+<li><a href="about_us.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="hamburger menu_mm menu-vertical">
+<i class="large material-icons font-color-white menu_mm menu-vertical">menu</i>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+<div class="menu_close_container">
+<div class="menu_close">
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="search">
+<form action="#" class="header_search_form menu_mm">
+<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+<i class="fa fa-search menu_mm " aria-hidden="true"></i>
+</button>
+</form>
+</div>
+<nav class="menu_nav">
+<ul class="menu_mm">
+<li class="dropdown menu_mm">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="index.html">Home 1</a></li>
+<li><a href="index2.html">Home 2</a></li>
+</ul>
+</li>
+<li class="dropdown menu_mm">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Job
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="job_category.html">Job List</a></li>
+<li><a href="job_detail.html">Job Detail</a></li>
+</ul>
+</li>
+<li class="menu_mm"><a href="blog_page.html">Blog</a></li>
+<li class="menu_mm"><a href="about-us.html">About</a></li>
+<li class="menu_mm"><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+    
+    <section id="post_job">
+        <div class="vertical-space-100"></div>
+        <div class="vertical-space-101"></div>
+        <div class="container">
+            <div class="list-box">
+<a href="#" class="font-color-black margin-right">Job </a> > <a href="#" class="font-color-orange margin-left"> Post job</a>
+
+            </div>
+            <div class="vertical-space-60"></div>
+            <div class="job-post-box">
+    {{ form_start(form, {'attr': {'class': 'your-custom-form-class'}}) }}
+
+    {# Customize form fields as needed using the form_row function #}
+    <div class="form-group">
+        {{ form_label(form.Titre, 'Job Title', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.Titre, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Enter your job title'}}) }}
+        {{ form_errors(form.Titre) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.Type_Offre, 'Type_Offre', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.Type_Offre, {'attr': {'class': 'form-control custom-input-class'}}) }}
+        {{ form_errors(form.Type_Offre) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.ExperienceLevel, 'Experience Level', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.ExperienceLevel, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Enter experience level'}}) }}
+        {{ form_errors(form.ExperienceLevel) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.Salary, 'Salary', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.Salary, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Enter Salary'}}) }}
+        {{ form_errors(form.Salary) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.ExpirationDate, 'Expiration Date', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.ExpirationDate, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Select expiration date'}}) }}
+        {{ form_errors(form.ExpirationDate) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.Description, 'Description', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.Description, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Enter description'}}) }}
+        {{ form_errors(form.Description) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.Language, 'Language', {'label_attr': {'class': 'custom-label-class'}}) }}
+        {{ form_widget(form.Language, {'attr': {'class': 'form-control custom-input-class', 'placeholder': 'Enter Language'}}) }}
+        {{ form_errors(form.Language) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_widget(form.save, {'attr': {'class': 'btn Post-Job-Offer'}}) }}
+    </div>
+
+    {{ form_end(form) }}
+</div>
+
+        </div>
+    </section>
+    
+<footer id="footer" class="background-color-white">
+<div class="container">
+<div class="vertical-space-100"></div>
+<div class="row">
+<div class="col-lg-4 col-md-6 vertical-space-2">
+<h5>About Us</h5>
+<p class="paregraf">Tristique velit phasellus sed auctor leo eros luctus nibh fermentu ad impediet rhonus dolor habitant purus velit aliquet donecurna ut in turpis faucibus</p>
+<a href="#">
+<i class="fa fa-facebook social-icon"></i></a>
+<a href="#">
+<i class="fa fa-twitter social-icon"></i></a>
+<a href="#">
+<i class="fa fa-pinterest-p social-icon"></i></a>
+<a href="#">
+<i class="fa fa-map-marker social-icon"></i></a>
+</div>
+<div class="col-lg-2 col-md-6 vertical-space-2">
+<h5>Company</h5>
+<div class="text">
+<a href="#">About</a>
+<a href="#">Support</a>
+<a href="#">Tems</a>
+<a href="#">Privacy</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 vertical-space-2">
+<h5>Supports</h5>
+<div class="text">
+<a href="#">About</a>
+ <a href="#">Support</a>
+<a href="#">Tems</a>
+<a href="#">Privacy</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 vertical-space-2">
+<h5>Subscribe Us</h5>
+<p>Get latest update and newsletter</p>
+<div class="vertical-space-30"></div>
+<form>
+<input type="email" class="email " placeholder="Email Address " required="">
+<span class="fa fa-envelope email-icone "></span>
+<input type="submit" class="Subscribe" value="Subscribe">
+</form>
+</div>
+</div>
+<div class="vertical-space-60"></div>
+</div>
+<div class="container-fluid background-color-orange main-footer">
+<div class="container text-center">
+<div class="vertical-space-30"></div>
+<p><a href="https://www.templatespoint.net">TemplatesPoint</a></p>
+</div>
+</div>
+</footer></body>
+</html>

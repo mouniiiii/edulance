@@ -1,0 +1,4 @@
+app_jobpost:
+    path: /jobpost
+    controller: App\Controller\OffreController::postOffre
+
